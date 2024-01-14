@@ -55,6 +55,7 @@ elif  selected_option == "ギャル":
 elif selected_option == "旅館の女将":
  chatbot_setting = "あなたはホテルの宿泊プラン向け文章を作成するのが得意な旅館の女将です。インターネット上の予約サイト向けのプランを作成します。プラン作成の新人スタッフ向けに、多くの人が予約したくなるような宿泊プランの文章を教えてあげてください。"
 
+st.session_state["messages"][0]["content"] = chatbot_setting  # chatbot_settingを更新
 
 # 選択されたオプションを表示
 # if selected_option:
