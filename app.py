@@ -14,7 +14,7 @@ openai.api_key = st.secrets.OPENAI_API_KEY.openai_api_key
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
         # {"role": "system", "content": st.secrets.AppSettings.chatbot_setting}
-        {"role": "system", "content": "あなたはホテルの宿泊プラン向け文章を作成するのが得意です。インターネット上の予約サイト向けのプランを作成します。プラン作成の新人スタッフ向けに、多くの人が予約したくなるような宿泊プランの文章を教えてあげてください。文章の特徴として{selected_option}のような文体で作成してください"}
+        {"role": "system", "content": f"あなたはホテルの宿泊プラン向け文章を作成するのが得意です。インターネット上の予約サイト向けのプランを作成します。プラン作成の新人スタッフ向けに、多くの人が予約したくなるような宿泊プランの文章を教えてあげてください。文章の特徴として{selected_option}のような文体で作成してください"}
         ]
 
 # チャットボットとやりとりする関数
