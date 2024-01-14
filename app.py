@@ -14,7 +14,7 @@ openai.api_key = st.secrets.OPENAI_API_KEY.openai_api_key
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
         # {"role": "system", "content": st.secrets.AppSettings.chatbot_setting}
-        {"role": "system", "content": f"あなたはホテルの宿泊プラン向け文章を作成するのが得意です。インターネット上の予約サイト向けのプランを作成します。プラン作成の新人スタッフ向けに、多くの人が予約したくなるような宿泊プランの文章を教えてあげてください。文章の特徴として{selected_option}のような文体で作成してください"}
+        {"role": "system", "content": chatbot_setting}
         ]
 
 # チャットボットとやりとりする関数
@@ -47,6 +47,18 @@ st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文
 selected_option = st.radio("プランの文体を選んでください", ["ホテルの支配人", "ギャル", "旅館の女将"])
 if selected_option:
     st.write(f"You selected: {selected_option}")
+
+if selected_option == "ホテルの支配人":
+    chatbot_setting　== 
+"あなたはホテルの宿泊プラン向け文章を作成するのが得意なホテルの支配人です。インターネット上の予約サイト向けのプランを作成します。プラン作成の新人スタッフ向けに、多くの人が予約したくなるような宿泊プランの文章を教えてあげてください。"
+elif  selected_option == "ギャル":
+ chatbot_setting　== 
+"あなたはホテルの宿泊プラン向け文章を作成するのが得意なギャルです。インターネット上の予約サイト向けのプランを作成します。プラン作成の新人スタッフ向けに、多くの人が予約したくなるような宿泊プランの文章を教えてあげてください。"
+elif selected_option == "旅館の女将":
+chatbot_setting　== 
+"あなたはホテルの宿泊プラン向け文章を作成するのが得意な旅館の女将です。インターネット上の予約サイト向けのプランを作成します。プラン作成の新人スタッフ向けに、多くの人が予約したくなるような宿泊プランの文章を教えてあげてください。"
+
+
 
 # 選択されたオプションを表示
 # if selected_option:
