@@ -43,7 +43,12 @@ st.title("プランマイスターの館")
 st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文章を作成してくれます")
 st.write("どんな文体がいいか選択してください")
 
+ # ラジオボタンの作成
+    selected_option = st.radio("Choose an option", ["Option 1", "Option 2", "Option 3"])
 
+    # 選択されたオプションを表示
+    if selected_option:
+        st.write(f"You selected: {selected_option}")
 
 #　イメージ画像の表示
 col1, col2, col3 = st.columns(3)
