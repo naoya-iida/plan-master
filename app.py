@@ -42,7 +42,7 @@ st.title("プランマイスターの館")
 st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文章を作成してくれます")
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.subheader("支配人")
+    st.subheader("ホテルの支配人")
     st.image("master.jpg", use_column_width=True)
 with col2:
     st.subheader("ギャル")
