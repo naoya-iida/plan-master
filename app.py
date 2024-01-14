@@ -38,7 +38,7 @@ def communicate():
 
 
 # ユーザーインターフェイスの構築
-st.title("プランマスターの館")
+st.title("プランマイスターの館")
 st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文章を作成してくれます")
 image = Image.open('master.jpg')
 st.image(image, caption='※プランマスターイメージ｜AI生成',use_column_width=False)
