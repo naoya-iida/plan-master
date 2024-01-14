@@ -44,8 +44,7 @@ st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文
 
  # ラジオボタンの作成
 selected_option = st.radio("プランの文体を選んでください", ["ホテルの支配人", "ギャル", "旅館の女将"])
-options = ["ホテルの支配人", "ギャル", "旅館の女将"]
-selected_options = st.checkbox("Choose an option", options)
+
 
 # 選択されたオプションを表示
 # if selected_option:
