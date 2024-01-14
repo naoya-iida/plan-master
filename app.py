@@ -38,8 +38,8 @@ def communicate():
 
 
 # ユーザーインターフェイスの構築
-st.title("クチコミ大好き支配人君")
-st.write("ChatGPTが支配人になりきって、入力したクチコミに返信してくれます")
+st.title("プランマスターの館")
+st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文章を作成してくれます")
 image = Image.open('manager2.jpg')
 st.image(image, caption='※支配人君イメージ｜AI生成',use_column_width=False)
 
