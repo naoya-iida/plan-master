@@ -66,7 +66,7 @@ with col3:
 # image = Image.open('master.jpg')
 # st.image(image, caption='※プランマスターイメージ｜AI生成',use_column_width=False)
 
-user_input = st.text_input("ホテルの特徴や作りたいプランの内容を入力してください。立地や食事の有無等", key="user_input", on_change=communicate)
+user_input = st.text_input("ホテルの特徴や作りたいプランの内容や条件を入力してください。立地や食事の有無、周辺の観光地等", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
