@@ -1,6 +1,5 @@
 
 import streamlit as st
-import tkinter as tk
 import openai
 #from openai import OpenAI
 from PIL import Image
@@ -44,26 +43,7 @@ st.title("プランマイスターの館")
 st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文章を作成してくれます")
 st.write("どんな文体がいいか選択してください")
 
-#　ラジオボックスの作成
-def on_radio_button_select():
-    selected_option = var.get()
 
-# Tkinterウィンドウの作成
-root = tk.Tk()
-root.title("ラジオボックスの例")
-
-# ラジオボタンの変数
-var = tk.StringVar()
-
-# ラジオボタンの作成
-radio_button1 = tk.Radiobutton(root, text="ホテルの支配人", variable=var, value="Option 1", command=on_radio_button_select)
-radio_button1.pack(pady=5)
-
-radio_button2 = tk.Radiobutton(root, text="ギャル", variable=var, value="Option 2", command=on_radio_button_select)
-radio_button2.pack(pady=5)
-
-radio_button3 = tk.Radiobutton(root, text="旅館の女将", variable=var, value="Option 3", command=on_radio_button_select)
-radio_button3.pack(pady=5)
 
 #　イメージ画像の表示
 col1, col2, col3 = st.columns(3)
