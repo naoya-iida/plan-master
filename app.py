@@ -40,6 +40,17 @@ def communicate():
 # ユーザーインターフェイスの構築
 st.title("プランマイスターの館")
 st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文章を作成してくれます")
+col1, col2, col3 = st.beta_columns(3)
+with col1:
+    st.header("A cat")
+    st.image("master.jpg", use_column_width=True)
+with col2:
+    st.header("A dog")
+    st.image("master.jpg", use_column_width=True)
+    
+with col3:
+    st.header("An owl")
+    st.image("master.jpg", use_column_width=True)
 image = Image.open('master.jpg')
 st.image(image, caption='※プランマスターイメージ｜AI生成',use_column_width=False)
 
