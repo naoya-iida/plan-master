@@ -47,12 +47,12 @@ with col1:
 with col2:
     st.subheader("ギャル")
     st.image("master.jpg", use_column_width=True)
-    
 with col3:
     st.subheader("旅館の女将")
     st.image("master.jpg", use_column_width=True)
-image = Image.open('master.jpg')
-st.image(image, caption='※プランマスターイメージ｜AI生成',use_column_width=False)
+    
+# image = Image.open('master.jpg')
+# st.image(image, caption='※プランマスターイメージ｜AI生成',use_column_width=False)
 
 user_input = st.text_input("ホテルの特徴や作りたいプランの内容を入力してください。立地や食事の有無等", key="user_input", on_change=communicate)
 
