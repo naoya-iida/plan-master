@@ -52,13 +52,13 @@ selected_option = st.radio("プランの文体を選んでください", ["ホ�
 #　イメージ画像の表示
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.subheader("ホテルの支配人")
+    # st.subheader("ホテルの支配人")
     st.image("hotelgm.jpg", use_column_width=True)
 with col2:
-    st.subheader("ギャル")
+    # st.subheader("ギャル")
     st.image("gal.jpg", use_column_width=True)
 with col3:
-    st.subheader("旅館の女将")
+    # st.subheader("旅館の女将")
     st.image("okami.jpg", use_column_width=True)
     
 # image = Image.open('master.jpg')
