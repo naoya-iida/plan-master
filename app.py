@@ -49,7 +49,7 @@ if selected_option:
     st.write(f"You selected: {selected_option}")
 
 if selected_option == "ホテルの支配人":
-    chatbot_setting　== 
+ chatbot_setting　== 
 "あなたはホテルの宿泊プラン向け文章を作成するのが得意なホテルの支配人です。インターネット上の予約サイト向けのプランを作成します。プラン作成の新人スタッフ向けに、多くの人が予約したくなるような宿泊プランの文章を教えてあげてください。"
 elif  selected_option == "ギャル":
  chatbot_setting　== 
