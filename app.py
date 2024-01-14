@@ -43,7 +43,7 @@ st.write("ChatGPTが宿泊プラン作成のマイスターとしてプラン文
 image = Image.open('manager2.jpg')
 st.image(image, caption='※支配人君イメージ｜AI生成',use_column_width=False)
 
-user_input = st.text_input("返信してほしいクチコミを入力してください。", key="user_input", on_change=communicate)
+user_input = st.text_input("ホテルの特徴や作りたいプランの内容を入力してください。立地や食事の有無等", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
