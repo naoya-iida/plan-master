@@ -44,7 +44,7 @@ st.title("プラン作り大好きの館")
 st.write("プラン作りが大好きな3人がそれぞれの特徴に合わせてプランを作ります")
 
  # ラジオボタンの作成
-selected_option = st.radio("誰にお願いしますか？, ["ホテルの支配人", "ギャル", "旅館の女将"])
+selected_option = st.radio("誰にお願いしますか？", ["ホテルの支配人", "ギャル", "旅館の女将"])
 selected_optioncall = ""  # selected_optioncall を初期化
 #　if selected_option:
 
