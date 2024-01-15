@@ -63,7 +63,7 @@ elif selected_option == "ギャル":
     立地や食事の条件など、項目ごとに分けてわかりやすく書いてください。
     料金は書かないでください
     予約方法は書かないでください"""
-    selected_optioncall = "「よーし、がんばるぞー！　バイブスぶち上げのプラン作っちゃうよー！」"
+    selected_optioncall = "「よーし、がんばるぞー！　バイブスぶち上がるプラン作っちゃうよー☆」"
 elif selected_option == "旅館の女将":
     chatbot_setting = """あなたは旅館の宿泊プラン向け文章を作成するのが得意です。
     旅館の女将のような温かみのある落ち着いた文章。
@@ -71,7 +71,7 @@ elif selected_option == "旅館の女将":
     立地や食事の条件など、項目ごとに分けてわかりやすく書いてください。
     料金は書かないでください
     予約方法は書かないでください"""
-    selected_optioncall = "「いただいた情報を上質な体験をお届けするプランを作成します」"
+    selected_optioncall = "「いただいた情報から上質な体験をお届けするプランを作成いたしますね♪」"
 
 st.write(f"{selected_option}がプランを作ってくれます。  \n{selected_optioncall}")
 st.session_state["messages"][0]["content"] = chatbot_setting  # chatbot_settingを更新
