@@ -47,7 +47,7 @@ st.write("プランの文章を考えるのが大好きな3人がそれぞれの
 selected_option = st.radio("プランの文体を選んでください", ["ホテルの支配人", "ギャル", "旅館の女将"])
 selected_optioncall = ""  # selected_optioncall を初期化
 if selected_option:
-    st.write(f"{selected_option}がプランを作ってくれます。{selected_optioncall}")
+    
 
 if selected_option == "ホテルの支配人":
     chatbot_setting = """あなたはホテルの宿泊プラン向け文章を作成するのが得意です。
@@ -73,7 +73,8 @@ elif selected_option == "旅館の女将":
     料金は書かないでください
     予約方法は書かないでください"""
     selected_optioncall = "「上質な体験をお届けします」"
- 
+
+st.write(f"{selected_option}がプランを作ってくれます。{selected_optioncall}")
 st.session_state["messages"][0]["content"] = chatbot_setting  # chatbot_settingを更新
 
 # 選択されたオプションを表示
