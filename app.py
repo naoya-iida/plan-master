@@ -46,7 +46,7 @@ st.write("プランの文章を考えるのが大好きな3人がそれぞれの
  # ラジオボタンの作成
 selected_option = st.radio("プランの文体を選んでください", ["ホテルの支配人", "ギャル", "旅館の女将"])
 selected_optioncall = ""  # selected_optioncall を初期化
-if selected_option:
+#　if selected_option:
     
 
 if selected_option == "ホテルの支配人":
