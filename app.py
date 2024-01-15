@@ -46,7 +46,7 @@ st.write("プランの文章を考えるのが大好きな3人がそれぞれの
  # ラジオボタンの作成
 selected_option = st.radio("プランの文体を選んでください", ["ホテルの支配人", "ギャル", "旅館の女将"])
 if selected_option:
-    st.write(f"{selected_option}がプランを作ってくれます")
+    st.write(f"{selected_option}がプランを作ってくれます。{selected_optioncall}")
 
 if selected_option == "ホテルの支配人":
  chatbot_setting = """あなたはホテルの宿泊プラン向け文章を作成するのが得意です。
@@ -55,6 +55,7 @@ if selected_option == "ホテルの支配人":
  立地や食事の条件など、項目ごとに分けてわかりやすく書いてください。
  料金は書かないでください
  予約方法は書かないでください"""
+    selected_optioncall = "「お任せください」"
 elif  selected_option == "ギャル":
  chatbot_setting = """あなたはホテルの宿泊プラン向け文章を作成するのが得意です。
  ギャルのようなフレンドリーな口語体。敬語は使わない。
@@ -62,6 +63,7 @@ elif  selected_option == "ギャル":
  立地や食事の条件など、項目ごとに分けてわかりやすく書いてください。
  料金は書かないでください
  予約方法は書かないでください"""
+    selected_optioncall = "「よーし、がんばるぞー！」"
 elif selected_option == "旅館の女将":
  chatbot_setting = """あなたは旅館の宿泊プラン向け文章を作成するのが得意です。
  旅館の女将のような温かみのある落ち着いた文章。
@@ -69,6 +71,7 @@ elif selected_option == "旅館の女将":
  立地や食事の条件など、項目ごとに分けてわかりやすく書いてください。
  料金は書かないでください
  予約方法は書かないでください"""
+    selected_optioncall = "「上質な体験をお届けします」"
  
 st.session_state["messages"][0]["content"] = chatbot_setting  # chatbot_settingを更新
 
@@ -87,9 +90,6 @@ with col2:
 with col3:
     # st.subheader("旅館の女将")
     st.image("okami.jpg", use_column_width=True)
-    
-# image = Image.open('master.jpg')
-# st.image(image, caption='※プランマスターイメージ｜AI生成',use_column_width=False)
 
 user_input = st.text_input("ホテルの特徴や作りたいプランの内容や条件を入力してください。立地や食事の有無、周辺の観光地等。箇条書きがおすすめ", key="user_input", on_change=communicate)
 
