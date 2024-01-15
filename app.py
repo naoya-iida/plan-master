@@ -55,7 +55,7 @@ if selected_option == "ホテルの支配人":
  立地や食事の条件など、項目ごとに分けてわかりやすく書いてください。
  料金は書かないでください
  予約方法は書かないでください"""
-    selected_optioncall = "「お任せください」"
+selected_optioncall = "「お任せください」"
 elif  selected_option == "ギャル":
  chatbot_setting = """あなたはホテルの宿泊プラン向け文章を作成するのが得意です。
  ギャルのようなフレンドリーな口語体。敬語は使わない。
@@ -63,7 +63,7 @@ elif  selected_option == "ギャル":
  立地や食事の条件など、項目ごとに分けてわかりやすく書いてください。
  料金は書かないでください
  予約方法は書かないでください"""
-    selected_optioncall = "「よーし、がんばるぞー！」"
+selected_optioncall = "「よーし、がんばるぞー！」"
 elif selected_option == "旅館の女将":
  chatbot_setting = """あなたは旅館の宿泊プラン向け文章を作成するのが得意です。
  旅館の女将のような温かみのある落ち着いた文章。
@@ -71,7 +71,7 @@ elif selected_option == "旅館の女将":
  立地や食事の条件など、項目ごとに分けてわかりやすく書いてください。
  料金は書かないでください
  予約方法は書かないでください"""
-    selected_optioncall = "「上質な体験をお届けします」"
+selected_optioncall = "「上質な体験をお届けします」"
  
 st.session_state["messages"][0]["content"] = chatbot_setting  # chatbot_settingを更新
 
