@@ -73,7 +73,7 @@ elif selected_option == "旅館の女将":
     予約方法は書かないでください"""
     selected_optioncall = "「あなたの旅館の情報をいただければ、上質な滞在をお届けできるプランを作成してみますね♪」"
 
-st.write(f"プラン作りが大好きな {selected_option}が　しょうぶを しかけてきた！  \n{selected_optioncall}")
+st.write(f"プラン作りが大好きな　{selected_option}が　しょうぶを　しかけてきた！  \n{selected_optioncall}")
 st.session_state["messages"][0]["content"] = chatbot_setting  # chatbot_settingを更新
 
 # 選択されたオプションを表示
