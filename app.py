@@ -92,7 +92,7 @@ with col3:
     # st.subheader("旅館の女将")
     st.image("okami.jpg", use_column_width=True)
 
-user_input = st.text_input("ホテルの特徴や作りたいプランの内容や条件を入力してください。立地や食事の有無、周辺の観光地等。箇条書きがおすすめ", key="user_input", on_change=communicate)
+user_input = st.text_input("ホテルの特徴や作りたいプランの内容や条件を入力してください。\n立地や食事の有無、周辺の観光地等。箇条書きがおすすめ", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
