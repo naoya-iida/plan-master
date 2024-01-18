@@ -44,7 +44,7 @@ st.title("プラン作り大好き族の館")
 st.write("プラン作りが大好きな3人がそれぞれの特徴に合わせてプランを作ります")
 
  # ラジオボタンの作成
-selected_option = st.radio("誰にお願いしますか？", ["ホテルの支配人", "金髪ギャル", "旅館の女将"])
+selected_option = st.radio("誰にお願いしますか？", ["ホテルの支配人", "金髪のギャル", "旅館の女将"])
 selected_optioncall = ""  # selected_optioncall を初期化
 #　if selected_option:
 
@@ -56,7 +56,7 @@ if selected_option == "ホテルの支配人":
     料金は書かないでください
     予約方法は書かないでください"""
     selected_optioncall = "「お任せください。ホテルの特徴や立地を教えて頂ければ適切な文章を作成致します」"
-elif selected_option == "金髪ギャル":
+elif selected_option == "金髪のギャル":
     chatbot_setting = """あなたはホテルの宿泊プラン向け文章を作成するのが得意です。
     イケイケなギャルのようなフレンドリーな口語体。敬語は禁止。
     多くの人が予約したくなるような宿泊プランの文章を書いてください。
